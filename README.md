@@ -17,10 +17,7 @@ Before installing, make sure you have [Node.js](https://nodejs.org/) and [MongoD
    git clone https://github.com/PonnadaKiran/voosh_assignment.git
    cd event_management_system
 
-2.Install the dependencies:
+2. Install the dependencies and start the server:
   ```bash
   npm install
-
-3.Start the server:
-  ```bash
   npm start
