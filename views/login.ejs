@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        form { display: inline-block; margin-top: 20px; }
+        label, input { display: block; margin-bottom: 10px; }
+    </style>
+</head>
+<body>
+    <h1>User Login</h1>
+    <form action="/user/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

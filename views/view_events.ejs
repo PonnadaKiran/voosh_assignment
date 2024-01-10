@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Events</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .event { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Upcoming Events</h1>
+    <% events.forEach(function(event) { %>
+        <div class="event">
+            <h2><%= event.title %></h2>
+            <p><%= event.description %></p>
+            <p><%= event.date.toDateString() %></p>
+            <form action="/event/delete/<%= event._id %>" method="post">
+                <button type="submit">Delete</button>
+            </form>
+        </div>
+    <% }); %>
+</body>
+</html>
